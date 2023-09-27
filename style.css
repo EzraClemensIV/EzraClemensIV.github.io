@@ -11,7 +11,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(239, 80, 41);
+    background: rgb(255, 0, 0);
    margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -37,7 +37,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(0, 204, 255);
+    background: rgba(0, 255, 76, 0.459);
     display: flex;
 }
 .sidebar {
@@ -84,4 +84,24 @@ h2, h3 {
         #portfolio a {
             text-decoration: none;
             color: #454545;
+        }
+        
+        .teamlink{
+            color: rgb(0, 0, 0);
+        }
+        .teamlink:hover{
+            color: rgb(255, 0, 0);
+        }
+        .favteambody {
+            background: rgb(0, 119, 255);
+            color: rgb(45, 45, 45);
+            padding: 10px;
+            font-family: arial;
+        }
+        .favteammain {
+            background: rgb(255, 255, 255);
+    display: flex;
+        }
+        .nav-a:hover {
+            color: rgb(0, 119, 255);
         }
