@@ -39,21 +39,21 @@ var background = function (window) {
             // TODO 1:
             // this currently fills the background with an obnoxious yellow;
             // you should modify both the height and color to suit your game
-         
+            var backgroundFill = draw.rect(canvasWidth,canvasHeight,'yellow');
+            background.addChild(backgroundFill);
             
             // TODO 2: - Add a moon and starfield
-      
-
+            
             
             // TODO 4: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
-           
+            
             
             // TODO 3: Part 1 - Add a tree
-            tree = draw.bitmap("img/tree.png");
-
+            
             
         } // end of render function - DO NOT DELETE
-    
+        
+        
         // Perform background animation
         // called on each timer "tick" - 60 times per second
         function update() {
@@ -63,10 +63,11 @@ var background = function (window) {
             var groundY = ground.y;
             
             // TODO 3: Part 2 - Move the tree!
-           
+            
+            
             // TODO 4: Part 2 - Parallax
-           
-          
+            
+
         } // end of update function - DO NOT DELETE
         
         
