@@ -78,8 +78,8 @@ function createMarker(x, y) {
   game.addGameItem(reward);
   reward.velocityX = -5
   reward.rotationalVelocity = 10 
-  reward.onPlayerCollision = function () {game.startLevel(); reward.fadeOut();};
-  reward.onProjectileCollision = function () {game.startLevel(); reward.fadeOut();};
+  reward.onPlayerCollision = function () {startLevel(); reward.fadeOut();};
+  reward.onProjectileCollision = function () {startLevel(); reward.fadeOut();};
   // all code from TODO 11 and 12
 }
 createReward(900, groundY - 320);
