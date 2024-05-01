@@ -86,9 +86,18 @@ createReward(900, groundY - 320);
   createReward(1000, groundY - 350);
   createReward(1700, groundY - 330);
   createMarker(2000, groundY - 330);
+  var level = levelData[0].gameItems[1]
+  var levelObjects = gameItems[0]
     function startLevel() {
       // TODO 13 goes below here
-
+      for (var i = 0; i < gameItems.length; i++) {
+        var Item = gameItems[i];
+        var Itemx = Item.x
+        var Itemy = Item.y
+      createSawBlade(Itemx,Itemy)
+      createEnemy(Itemx,Itemy)
+        // code to do something with each element
+      } 
 
 
       //////////////////////////////////////////////
